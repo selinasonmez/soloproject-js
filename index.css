@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-image: url(images.html/scoregirl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    color: #EEEEEE;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 40px solid black;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: black; 
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.scoreboard {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 150px;
+    text-align: center;
+    color: #F94F6D;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    transform: translatex(-15%);
+}
+
+/* Buttons */
+
+.btns {
+    display: flex;
+}
+
+.btns button {
+    flex-grow: 1;
+    background-color: transparent;
+    border: 2px solid #9AABD8;
+    border-radius: 3px;
+    color: #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: large;
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+}
+
+
+.btn1 {
+    margin-right: 5px;
+}
+
+.btn2 {
+    margin-right: 5px;
+}
+
+.btn3 {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Change to column layout for smaller screens */
+    }
+  
+    .container > div {
+      margin-bottom: 0; /* Reset margin-bottom for the vertical arrangement */
+    }
+  }
